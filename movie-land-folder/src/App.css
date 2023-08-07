@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+}
+body {
+  background: #1d1b1b;
+  /* background: #212426; */
+}
+.app {
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.webName {
+  font-size: 3rem;
+  letter-spacing: 0.9px;
+  background: linear-gradient(90deg, #f9d3b4, rgba(249, 211, 180, 0.274));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+.search {
+  width: 71%;
+  border-radius: 9px;
+  margin: 2em 0.5em;
+  padding: 0.7em 1.4em;
+  background: #1f2123;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527; */
+  /* box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527; */
+}
+.search input {
+  flex: 1;
+  outline: none;
+  background-color: transparent;
+  padding: 0.5em;
+  font-size: 1.3rem;
+  border: none;
+  color: white;
+}
+.search i {
+  color: #f9d3b4;
+  font-size: 1.5rem;
+}
