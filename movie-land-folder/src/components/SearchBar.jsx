@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const SearchBar = (prop) => {
+const SearchBar = ({ searchMovies }) => {
   const [search, setSearch] = useState("");
   return (
     <>
@@ -14,7 +14,12 @@ const SearchBar = (prop) => {
             setSearch(e.target.value);
           }}
         />
-        <i className="bi bi-search" onClick={() => {}}></i>
+        <i
+          className="bi bi-search"
+          onClick={() => {
+            searchMovies(search);
+          }}
+        ></i>
       </div>
     </>
   );
