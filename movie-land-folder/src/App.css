@@ -51,3 +51,14 @@ body {
   color: #f9d3b4;
   font-size: 1.5rem;
 }
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.movie {
+  width: 310px;
+  border: 1px solid white;
+}
