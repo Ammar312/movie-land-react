@@ -19,7 +19,7 @@ const App = () => {
   return (
     <>
       <div className="app">
-        <WebTitle name="MOVIE LAND" />
+        <WebTitle name="MOVIE FLIX" />
         <SearchBar searchMovies={searchMovies} />
 
         {movies?.length > 0 ? (
