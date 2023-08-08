@@ -14,25 +14,26 @@ const App = () => {
     console.log(data);
   };
   useEffect(() => {
-    // searchMovies("barbie");
+    searchMovies("barbie");
   }, []);
   return (
     <>
       <div className="app">
         <WebTitle name="MOVIE LAND" />
         <SearchBar searchMovies={searchMovies} />
+
+        {movies?.length > 0 ? (
+          <div className="container">
+            {movies.map((movie) => (
+              <MoviesCard movie={movie} />
+            ))}
+          </div>
+        ) : (
+          <div className="empty">
+            <h2> No movies found</h2>
+          </div>
+        )}
       </div>
-      {movies.length > 0 ? (
-        <div className="container">
-          {movies?.map((movie) => {
-            <MoviesCard movie={movie} />;
-          })}
-        </div>
-      ) : (
-        <div className="empty">
-          <h2> No movies found</h2>
-        </div>
-      )}
     </>
   );
 };
