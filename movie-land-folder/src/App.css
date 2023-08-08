@@ -137,4 +137,38 @@ body {
   }
 }
 @media screen and (max-width: 696px) {
+  .movie {
+    width: 250px;
+    height: 390px;
+  }
+}
+@media screen and (max-width: 595px) {
+  .search {
+    width: 100%;
+  }
+  .movie {
+    width: 300px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .movie {
+    width: 100%;
+    height: 430px;
+  }
+  .search {
+    width: 100%;
+  }
+  .search input {
+    font-size: 1rem;
+  }
+  .search i {
+    font-size: 1.2rem;
+  }
+  .webName {
+    font-size: 2.5rem;
+  }
+  .empty {
+    font-size: 1.2rem;
+  }
 }
