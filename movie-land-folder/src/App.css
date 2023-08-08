@@ -131,3 +131,10 @@ body {
   font-size: 1.5rem;
   font-family: "Raleway", sans-serif;
 }
+@media screen and (max-width: 760px) {
+  .app {
+    padding: 3rem 2rem;
+  }
+}
+@media screen and (max-width: 696px) {
+}

@@ -13,6 +13,9 @@ const SearchBar = ({ searchMovies }) => {
           onChange={(e) => {
             setSearch(e.target.value);
           }}
+          onKeyDown={(e) => {
+            e.key === "Enter" ? searchMovies(search) : "";
+          }}
         />
         <i
           className="bi bi-search"
