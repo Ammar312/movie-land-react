@@ -50,6 +50,7 @@ body {
 .search i {
   color: #f9d3b4;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 .container {
   width: 100%;
@@ -96,7 +97,7 @@ body {
 }
 .movie:hover div:nth-of-type(2) {
   height: 100%;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .description {
   position: absolute;

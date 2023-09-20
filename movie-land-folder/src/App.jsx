@@ -14,7 +14,7 @@ const App = () => {
     console.log(data);
   };
   useEffect(() => {
-    searchMovies("barbie");
+    searchMovies("Harry Potter");
   }, []);
   return (
     <>
